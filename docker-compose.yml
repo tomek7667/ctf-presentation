@@ -7,3 +7,10 @@ services:
     restart: always
     tty: true
     stdin_open: true
+  web-medium:
+    build: web-medium/
+    ports:
+      - "22222:3000"
+    restart: always
+    tty: true
+    stdin_open: true
